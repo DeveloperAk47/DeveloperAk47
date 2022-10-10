@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width",intial-scale="1">
+</head>
+<body style="background-color:green">.
+<form method="post" autocomplete="off" name="google-sheet" action="https://docs.google.com/spreadsheets/d/1nX9bobmhPA0KpNlN1zmkryiRqdvyqN_2u6QAvI3Zv2Y/edit#gid=0" >
+<p style="color:white"><b>pata bidhaa za vyakula kwa bei rahisi kipindi hiki cha Agrostudy!</b><p>
+andika bidhaa unayotaka hapo chini, baada ya kutuma taarifa utapata kiwango cha fedha unachotakiwa kulipa<br/>
+
+</select><br/><br/>
+
+<input type="text" style="border-radius:10px;width:200px;height:20px" required/>bidhaa <br/><br/>
+
+<input type="text" style="border-radius:10px;width:200px;height:20px" required/>jina lako <br/><br/>
+
+<input type="number" maximum number="2" placeholder="kg" style="border-radius:10px;width:200px;height:20px" required/>kiasi unachotaka<br/><br/>
+
+<input type="number" placeholder="+972" style="border-radius:10px;width:200px;height:20px">namba ya simu ya israel <br/><br/>
+<input type="text" style="border-radius:10px;width:200px;height:20px" required/>
+ mtaa unapoishi<br/><br/>
+<button style="color:green;border-radius:10px;width:100px;height:20px">submitt</button> <button style="color:green;border-radius:10px;width:100px;height:20px">reset</button>
+</form>
+<script type="text/javascript">
+const scriptURL="https://script.google.com/macros/s/AKfycbw2Y3dTzU-5Ps8LcQTXlSejjvBaxYO9OAd5O2yWcnUmojGeQBKdAZUB41rVmQ9p3_kJ/exec"
+const form=document.form['google-sheet']
+form.addEventListener('submit,e=>{
+e.preventDefaults()
+fetch(scriptURL,{method:'post',body: new FormData(form)})
+.then(response=> alert("fomu yako imetumwa kikamilifu kwenda kwa DEVELOPER DATABASE."))
+.catch(error=>console.error('error!', error.message))
+})
+</script>
+</body>
+<h1 style="font-size:30px;text-align:center">@DEVELOPER</h1>
+</html>
